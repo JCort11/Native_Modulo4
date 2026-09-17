@@ -1,7 +1,3 @@
-# Firebase Media Lab
-
-Proyecto NativeScript + Angular para demostrar los requisitos de Firebase Cloud Messaging, Toast, Social Share, Camera, Google Maps, NgRx/Jasmine y Karma JUnit Reporter.
-
 ## Requisitos
 
 - Node.js compatible con NativeScript
@@ -88,18 +84,3 @@ El reporter escribe:
 `test-results/junit.xml`
 
 Después de ejecutar correctamente la suite, verifica que el archivo exista y contenga XML JUnit con los casos ejecutados.
-
-## Requisitos del ejercicio
-
-| # | Requisito | Implementación |
-|---|---|---|
-| 1 | Token Firebase propio | `HomeComponent` + `firebase().messaging().getToken()` |
-| 2 | Toast para notificaciones | `AppComponent` + `ToastService` |
-| 3 | Social Share texto | `SharingComponent.shareTextContent()` |
-| 4 | Social Share imagen | `SharingComponent.shareBundledImage()` |
-| 5 | Camera | `CameraComponent.takePhoto()` |
-| 6 | Compartir foto de cámara | `CameraComponent.sharePhoto()` |
-| 7 | Google Maps con cuenta propia | `GoogleMapsModule` + API key propia |
-| 8 | Marker | `MapsComponent.onReady()` |
-| 9 | Jasmine + reducer Redux/NgRx | `src/tests/app.reducer.spec.ts` |
-| 10 | Karma JUnit Reporter | `karma.conf.js` + `test-results/junit.xml` |
