@@ -1,0 +1,7 @@
+<GridLayout rows="auto,*">
+  <StackLayout row="0" class="map-header">
+    <Label text="Google Maps SDK" class="title"></Label>
+    <Label text="El marker se agrega en el evento ready del mapa." textWrap="true"></Label>
+  </StackLayout>
+  <MapView row="1" [lat]="13.6929" [lng]="-89.2182" [zoom]="12" (ready)="onReady($event)"></MapView>
+</GridLayout>

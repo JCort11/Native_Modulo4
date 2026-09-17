@@ -1,0 +1,13 @@
+<ScrollView>
+  <StackLayout class="page">
+    <Label text="Notificaciones Firebase" class="title"></Label>
+    <Label text="Envía una notificación desde Firebase Console usando el token mostrado en la pantalla principal." textWrap="true"></Label>
+    <Label text="Token FCM:" class="section"></Label>
+    <TextView [text]="token" editable="false" class="token"></TextView>
+    <Label text="Notificaciones recibidas:" class="section"></Label>
+    <Label [text]="count$ | async" class="big"></Label>
+    <Label text="Última notificación:" class="section"></Label>
+    <Label [text]="last$ | async" textWrap="true" class="last"></Label>
+    <Button text="Mostrar Toast de prueba" (tap)="showDemoToast"></Button>
+  </StackLayout>
+</ScrollView>

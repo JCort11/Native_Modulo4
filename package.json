@@ -1,0 +1,53 @@
+{
+  "name": "firebase-media-lab",
+  "version": "1.0.0",
+  "description": "NativeScript Angular project for Firebase Messaging, Social Share, Camera, Google Maps and Jasmine/Karma JUnit.",
+  "main": "./src/main.ts",
+  "scripts": {
+    "android": "ns run android",
+    "test:android": "ns test android --no-watch",
+    "test:ci": "ns test android --no-watch"
+  },
+  "dependencies": {
+    "@angular/animations": "22.0.8",
+    "@angular/common": "22.0.8",
+    "@angular/compiler": "22.0.8",
+    "@angular/core": "22.0.8",
+    "@angular/forms": "22.0.8",
+    "@angular/platform-browser": "22.0.8",
+    "@angular/platform-browser-dynamic": "22.0.8",
+    "@angular/router": "22.0.8",
+    "@ngrx/store": "22.0.1",
+    "@nativescript/angular": "22.0.1",
+    "@nativescript/camera": "7.0.0",
+    "@nativescript/core": "9.1.2",
+    "@nativescript/firebase-core": "5.0.2",
+    "@nativescript/firebase-messaging": "5.0.2",
+    "@nativescript/google-maps": "1.8.0",
+    "@nativescript/social-share": "2.3.0",
+    "rxjs": "7.8.2",
+    "tslib": "2.8.1",
+    "zone.js": "0.16.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "22.0.7",
+    "@angular/compiler-cli": "22.0.8",
+    "@nativescript/android": "9.1.0",
+    "@nativescript/types": "9.0.0",
+    "@nativescript/unit-test-runner": "4.0.0",
+    "@nativescript/webpack": "5.0.27",
+    "@types/jasmine": "5.1.4",
+    "jasmine-core": "5.8.0",
+    "karma": "6.4.4",
+    "karma-jasmine": "5.1.0",
+    "karma-junit-reporter": "2.0.1",
+    "karma-nativescript-launcher": "1.0.0",
+    "typescript": "6.0.3"
+  },
+  "nativescript": {
+    "id": "com.jcort.firebaseMediaLab",
+    "tns-android": {
+      "version": "9.1.0"
+    }
+  }
+}

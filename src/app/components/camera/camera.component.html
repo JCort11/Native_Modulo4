@@ -1,0 +1,9 @@
+<ScrollView>
+  <StackLayout class="page">
+    <Label text="Cámara" class="title"></Label>
+    <Button text="Tomar fotografía" (tap)="takePhoto"></Button>
+    <Image [src]="captured" *ngIf="captured" height="320" stretch="aspectFit" class="photo"></Image>
+    <Label *ngIf="!captured" text="Aquí aparecerá la fotografía tomada." textWrap="true" class="placeholder"></Label>
+    <Button text="Compartir fotografía" (tap)="sharePhoto" [isEnabled]="!!captured"></Button>
+  </StackLayout>
+</ScrollView>

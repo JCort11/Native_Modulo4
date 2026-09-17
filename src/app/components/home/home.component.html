@@ -1,0 +1,16 @@
+<ScrollView>
+  <StackLayout class="page">
+    <Label text="Firebase Media Lab" class="title"></Label>
+    <Label text="Proyecto de demostración de plugins NativeScript" class="description"></Label>
+
+    <Label text="Token FCM del dispositivo" class="section-title"></Label>
+    <TextView [text]="token" editable="false" class="token"></TextView>
+
+    <Button text="🔔 Notificaciones Firebase" (tap)="go('/notifications')" class="action"></Button>
+    <Button text="📤 Social Share" (tap)="go('/sharing')" class="action"></Button>
+    <Button text="📷 Cámara + compartir imagen" (tap)="go('/camera')" class="action"></Button>
+    <Button text="🗺️ Google Maps + Marker" (tap)="go('/maps')" class="action"></Button>
+
+    <Label text="Pruebas unitarias: reducer de NgRx + Karma JUnit Reporter" class="test-info"></Label>
+  </StackLayout>
+</ScrollView>
